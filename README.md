@@ -8,7 +8,7 @@ Some example slides are included in the `data` directory.
 
 ## screenshot
 
-!()[https://www.dropbox.com/s/qxf3xug3i9tbvew/Screenshot%202016-01-17%2015.31.44.png?dl=1]
+![](https://www.dropbox.com/s/qxf3xug3i9tbvew/Screenshot%202016-01-17%2015.31.44.png?dl=1])
 
 ## usage
 
