@@ -175,7 +175,7 @@ try
 catch
   getpapers(p.query, p.outdir)
 results = require path.join(p.outdir, 'eupmc_results.json')
-progmsg = chalk.blue("Generating slides ") + chalk.yellow("[") + ":bar" + chalk.yellow("]")
+progmsg = chalk.blue("Generating slides ") + chalk.yellow("[") + ":bar" + chalk.yellow("]") + chalk.white(":elapseds elapsed")
 progopts = {
   total: results.length,
   width: 30,
@@ -207,4 +207,4 @@ for result in results
 fs.readdirSync(p.outdir)
   .map((f) -> path.join(p.outdir, f))
   .filter((f) -> fs.statSync(f).isDirectory())
-  .forEach(removeSync)
+  .forEach(fs.removeSync)
