@@ -203,4 +203,9 @@ for result in results
     return if not frontmatter?
     slide = slide_from_fig(caption, figure_imgs.full, frontmatter, i)
     slidefile = "#{id.id}_fig_#{i+1}.md"
-    fs.writeFileSync(path.join(datadir, slidefile), slide)
+    fs.writeFileSync(path.join(p.outdir, slidefile), slide)
+# finally, clean up the getpapers directories
+s.readdirSync(p.outdir)
+  .map((f) -> path.join(p.outdir, f))
+  .filter((f) -> fs.statSync(f).isDirectory())
+  .forEach(removeSync)
