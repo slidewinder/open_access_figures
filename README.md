@@ -12,12 +12,22 @@ Some example slides are included in the `data` directory.
 
 ## usage
 
-clone the repository
+You'll need Node.js installed. Read our [guide to going this if you don't have it](http://www.slidewinder.io/docs/how_to_help/code/01_setting_up.html#installing-node-js).
 
-then:
+clone this repository, then..
 
-- `npm install`
-- `bin/getfigures --help`
+```
+cd open_access_figures
+npm install
+```
+
+this should install all dependencies
+
+now you can run `getfigures`:
+
+```
+bin/getfigures.js
+```
 
 ## example
 
